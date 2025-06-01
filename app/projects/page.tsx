@@ -95,8 +95,8 @@ const Projects = () => {
                   value={category}
                   className={`${
                     category === activeCategory
-                      ? ""
-                      : "dark:hover:text-white/60 hover:text-primary/60"
+                      ? "bg-primary"
+                      : " hover:text-primary"
                   } capitalize w-[162px] md:w-auto relative`}
                   style={{
                     WebkitTapHighlightColor: "transparent",
@@ -105,7 +105,7 @@ const Projects = () => {
                   {category === activeCategory && (
                     <motion.span
                       layoutId="bubble"
-                      className="absolute inset-0 bg-primary dark:mix-blend-lighten"
+                      className="absolute inset-0 bg-primary  mix-blend-lighten"
                       style={{ borderRadius: 9999 }}
                       transition={{
                         type: "spring",

@@ -175,8 +175,10 @@ const About = forwardRef<HTMLDivElement, {}>((props, ref) => {
                         key={index}
                         onClick={() => setActiveTab(tab.value)}
                         className={`${
-                          activeTab === tab.value ? "" : "hover:text-white/60"
-                        } w-[162px] xl:w-auto relative`}
+                          activeTab === tab.value
+                            ? "bg-primary"
+                            : "hover:text-primary "
+                        } w-[162px] xl:w-auto relative `}
                         style={{
                           WebkitTapHighlightColor: "transparent",
                         }}
